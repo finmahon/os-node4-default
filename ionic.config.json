@@ -1,5 +1,8 @@
 {
-  "name": "ionic-tests",
+  "name": "rh-template",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

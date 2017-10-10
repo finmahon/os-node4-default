@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# generate docs
+function tests {
+  printf "\n Starting pre-commit checks..\n"
+  npm test
+
+  if [ "$?" != "0" ]; then
+    printf "\nThe script returned non-zero error code!" >&2
+    exit 1
+  fi
+}
+
+# generate docs
+function lint {
+  printf "\nTests have passed, linting source-code..\n"
+  npm run lint
+
+  if [ "$?" != "0" ]; then
+    printf "\nThe script returned non-zero error code!" >&2
+    exit 1
+  fi
+}
+
+# generate docs
+function docs {
+  printf "\nAlmost there, generating documentation..\n"
+  npm run docs
+}
+
+tests
+lint
+docs
