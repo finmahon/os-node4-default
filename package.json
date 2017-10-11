@@ -57,6 +57,7 @@
     "karma-webpack": "2.0.5",
     "null-loader": "0.1.1",
     "ts-loader": "2.3.7",
+    "tslint-eslint-rules": "4.1.1",
     "typedoc": "0.9.0",
     "typescript": "2.3.4"
   },

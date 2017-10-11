@@ -1,9 +1,16 @@
 {
+  "extends": [
+    "tslint-eslint-rules"
+  ],
   "rules": {
     "no-duplicate-variable": true,
     "no-unused-variable": [
       true
-    ]
+    ],
+    "no-constant-condition": true,
+    "no-extra-semi": true,
+    "ter-indent": [true, 2],
+    "ter-max-len": [true, 80]
   },
   "rulesDirectory": [
     "node_modules/tslint-eslint-rules/dist/rules"
