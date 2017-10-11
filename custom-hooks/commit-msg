@@ -17,8 +17,15 @@
 
 # This example catches duplicate Signed-off-by lines.
 
-echo "$1"
-# test "" = "$(grep '^[Sprint:SOS1234]: ' "$1" || {
-# 	echo >&2 Duplicate Signed-off-by lines.
-# 	exit 1
-# }
+
+COMMIT_REGEX="^\[.*?:.*?\] - .*?$"
+
+if [[ "$1" =~ $COMMIT_REGEX ]];
+then
+  printf "Commit message accepted"
+  exit 0
+else
+  printf >&2 "Please review format of commit message"
+  exit 1
+fi
+
