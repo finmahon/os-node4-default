@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftWebConsole
+  creationTimestamp: '2017-10-24T09:48:28Z'
+  labels:
+    app: ionic-test-c
+  name: ionic-test-c
+  namespace: ionic-test
+  resourceVersion: '95943'
+  selfLink: /oapi/v1/namespaces/ionic-test/buildconfigs/ionic-test-c
+  uid: 7cbfd929-b8a0-11e7-81fe-3aba2f0cbf89
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'ionic-test-c:latest'
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    git:
+      ref: fintan
+      uri: 'git@github.com:finmahon/os-node4-default.git'
+    sourceSecret:
+      name: sslecret
+    type: Git
+  strategy:
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        name: 'nodejs:6'
+        namespace: openshift
+    type: Source
+  triggers:
+    - generic:
+        secret: 67b31aea24887e04
+      type: Generic
+    - github:
+        secret: ec67c328e884e180
+      type: GitHub
+    - imageChange:
+        lastTriggeredImageID: >-
+          registry.access.redhat.com/rhscl/nodejs-6-rhel7@sha256:b0b80d7bb0a1d69ef513a063c5fb3b074b02f699fd5437051233932dae7c864a
+      type: ImageChange
+    - type: ConfigChange
+status:
+  lastVersion: 1

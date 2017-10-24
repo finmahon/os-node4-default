@@ -13,7 +13,8 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "serve": "npm run ionic:serve --enableLint false"
+    "serve": "npm run ionic:serve --enableLint false",
+    "start": "npm run test && npm run build"
   },
   "dependencies": {
     "@angular/common": "4.4.3",
