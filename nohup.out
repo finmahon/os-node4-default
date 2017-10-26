@@ -1,0 +1,595 @@
+[10:47:15] I/start - java -jar /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+[10:47:15] I/start - seleniumProcess.pid: 28338
+10:47:16.156 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+10:47:16.196 INFO - Java: Oracle Corporation 25.101-b13
+10:47:16.196 INFO - OS: Mac OS X 10.12.6 x86_64
+10:47:16.206 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+10:47:16.273 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+10:47:16.273 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+10:47:16.273 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+10:47:16.274 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+10:47:16.275 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+10:47:16.275 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+10:47:16.345 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+10:47:16.345 INFO - Selenium Server is up and running
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[10:47:26]  watch started ... 
+[10:47:26]  build dev started ... 
+[10:47:26]  clean started ... 
+[10:47:26]  clean finished in 3 ms 
+[10:47:26]  copy started ... 
+[10:47:26]  deeplinks started ... 
+[10:47:27]  deeplinks finished in 36 ms 
+[10:47:27]  transpile started ... 
+[10:47:30]  transpile finished in 2.97 s 
+[10:47:30]  preprocess started ... 
+[10:47:30]  copy finished in 3.12 s 
+[10:47:30]  preprocess finished in 77 ms 
+[10:47:30]  webpack started ... 
+[10:47:37]  webpack finished in 7.64 s 
+[10:47:37]  sass started ... 
+[10:47:38]  sass finished in 1.02 s 
+[10:47:38]  postprocess started ... 
+[10:47:38]  postprocess finished in 7 ms 
+[10:47:38]  lint started ... 
+[10:47:38]  build dev finished in 11.82 s 
+[10:47:38]  watch ready in 11.87 s 
+[10:47:38]  dev server running: http://localhost:8100/ 
+
+[2K[G[INFO] Development server running!
+       Local: http://localhost:8100
+       
+[33m[10:47:41]  tslint: src/pages/list/list.ts, line: 14 [39m
+            Line 14 exceeds the maximum line length of 80. 
+
+[2m      L13:  [22mconstructor(public navCtrl: NavController, public navParams: NavParams) {
+[2m      L14:  [22m  // If we navigated to this page, we will have an item available as a nav param
+[2m      L15:  [22m  this.selectedItem = navParams.get('item');
+
+[10:47:41]  lint finished in 2.67 s 
+[10:58:22] I/start - java -jar /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+[10:58:22] I/start - seleniumProcess.pid: 28473
+10:58:22.372 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+10:58:22.401 INFO - Java: Oracle Corporation 25.101-b13
+10:58:22.401 INFO - OS: Mac OS X 10.12.6 x86_64
+10:58:22.408 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+10:58:22.461 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+10:58:22.462 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+10:58:22.462 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+10:58:22.462 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+10:58:22.463 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+10:58:22.463 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+10:58:22.509 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+
+-------------------------------
+Running as a standalone server:
+-------------------------------
+
+Usage: java -jar selenium-server.jar [-interactive] [options]
+
+  -port <nnnn>: the port number the selenium server should use
+    (default 4444)
+  -timeout <nnnn>: an integer number of seconds we should allow a
+    client to be idle
+  -browserTimeout <nnnn>: an integer number of seconds a browser is
+    allowed to hang
+  -interactive: puts you into interactive mode.  See the tutorial for
+    more details
+  -singleWindow: puts you into a mode where the test web site
+    executes in a frame. This mode should only be selected if the
+    application under test does not use frames.
+  -profilesLocation: Specifies the directory that holds the profiles
+    that java clients can use to start up selenium.  Currently
+    supported for Firefox only.
+  -forcedBrowserMode <browser>: sets the browser mode to a single
+    argument (e.g. "*iexplore") for all sessions, no matter what is
+    passed to getNewBrowserSession
+  -forcedBrowserModeRestOfLine <browser>: sets the browser mode to
+    all the remaining tokens on the line (e.g. "*custom
+    /some/random/place/iexplore.exe") for all sessions, no matter what
+    is passed to getNewBrowserSession
+  -userExtensions <file>: indicates a JavaScript file that will be
+    loaded into selenium
+  -browserSessionReuse: stops re-initialization and spawning of the
+    browser between tests
+  -avoidProxy: By default, we proxy every browser request; set this
+    flag to make the browser use our proxy only for URLs containing
+    '/selenium-server'
+  -firefoxProfileTemplate <dir>: normally, we generate a fresh empty
+    Firefox profile every time we launch.  You can specify a directory
+    to make us copy your profile directory instead.
+  -debug: puts you into debug mode, with more trace information and
+    diagnostics on the console
+  -browserSideLog: enables logging on the browser side; logging
+    messages will be transmitted to the server.  This can affect
+    performance.
+  -ensureCleanSession: If the browser does not have user profiles,
+    make sure every new session has no artifacts from previous
+    sessions.  For example, enabling this option will cause all user
+    cookies to be archived before launching IE, and restored after IE
+    is closed.
+  -trustAllSSLCertificates: Forces the Selenium proxy to trust all
+    SSL certificates.  This doesn't work in browsers that don't use the
+    Selenium proxy.
+  -log <logFileName>: writes lots of debug information out to a log
+    file and disables logging to console
+  -logLongForm: writes information out to console in long format (for
+    debugging purpose)
+  -htmlSuite <browser> <startURL> <suiteFile> <resultFile>: Run a
+    single HTML Selenese (Selenium Core) suite and then exit
+    immediately, using the specified browser (e.g. "*firefox") on the
+    specified URL (e.g. "http://www.google.com").  You need to specify
+    the absolute path to the HTML test suite as well as the path to the
+    HTML results file we'll generate.
+  -proxyInjectionMode: puts you into proxy injection mode, a mode
+    where the selenium server acts as a proxy server for all content
+    going to the test application.  Under this mode, multiple domains
+    can be visited, and the following additional flags are supported:
+
+    -dontInjectRegex <regex>: an optional regular expression that
+      proxy injection mode can use to know when to bypss injection
+    -userJsInjection <file>: specifies a JavaScript file which will
+      then be injected into all pages
+    -userContentTransformation <regex> <replacement>: a regular
+      expression which is matched against all test HTML content; the
+      second is a string which will replace matches.  These flags can
+      be used any number of times.  A simple example of how this could
+      be useful: if you add "-userContentTransformation https http"
+      then all "https" strings in the HTML of the test application will
+      be changed to be "http".
+
+This synopsis lists options available in standalone role only. To
+  get help on the options available for other roles run the server with
+  -help option and the corresponding -role option value.
+java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:509)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:321)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:240)
+	at org.openqa.grid.selenium.GridLauncher$1.launch(GridLauncher.java:58)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:127)
+[10:58:22] I/start - Selenium Standalone has exited with code 0
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[10:58:33]  watch started ... 
+[10:58:33]  build dev started ... 
+[10:59:02] I/start - java -jar /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+[10:59:02] I/start - seleniumProcess.pid: 28514
+10:59:02.328 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+10:59:02.357 INFO - Java: Oracle Corporation 25.101-b13
+10:59:02.357 INFO - OS: Mac OS X 10.12.6 x86_64
+10:59:02.364 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+10:59:02.415 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+10:59:02.415 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+10:59:02.415 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+10:59:02.415 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+10:59:02.416 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+10:59:02.417 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+10:59:02.458 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+
+-------------------------------
+Running as a standalone server:
+-------------------------------
+
+Usage: java -jar selenium-server.jar [-interactive] [options]
+
+  -port <nnnn>: the port number the selenium server should use
+    (default 4444)
+  -timeout <nnnn>: an integer number of seconds we should allow a
+    client to be idle
+  -browserTimeout <nnnn>: an integer number of seconds a browser is
+    allowed to hang
+  -interactive: puts you into interactive mode.  See the tutorial for
+    more details
+  -singleWindow: puts you into a mode where the test web site
+    executes in a frame. This mode should only be selected if the
+    application under test does not use frames.
+  -profilesLocation: Specifies the directory that holds the profiles
+    that java clients can use to start up selenium.  Currently
+    supported for Firefox only.
+  -forcedBrowserMode <browser>: sets the browser mode to a single
+    argument (e.g. "*iexplore") for all sessions, no matter what is
+    passed to getNewBrowserSession
+  -forcedBrowserModeRestOfLine <browser>: sets the browser mode to
+    all the remaining tokens on the line (e.g. "*custom
+    /some/random/place/iexplore.exe") for all sessions, no matter what
+    is passed to getNewBrowserSession
+  -userExtensions <file>: indicates a JavaScript file that will be
+    loaded into selenium
+  -browserSessionReuse: stops re-initialization and spawning of the
+    browser between tests
+  -avoidProxy: By default, we proxy every browser request; set this
+    flag to make the browser use our proxy only for URLs containing
+    '/selenium-server'
+  -firefoxProfileTemplate <dir>: normally, we generate a fresh empty
+    Firefox profile every time we launch.  You can specify a directory
+    to make us copy your profile directory instead.
+  -debug: puts you into debug mode, with more trace information and
+    diagnostics on the console
+  -browserSideLog: enables logging on the browser side; logging
+    messages will be transmitted to the server.  This can affect
+    performance.
+  -ensureCleanSession: If the browser does not have user profiles,
+    make sure every new session has no artifacts from previous
+    sessions.  For example, enabling this option will cause all user
+    cookies to be archived before launching IE, and restored after IE
+    is closed.
+  -trustAllSSLCertificates: Forces the Selenium proxy to trust all
+    SSL certificates.  This doesn't work in browsers that don't use the
+    Selenium proxy.
+  -log <logFileName>: writes lots of debug information out to a log
+    file and disables logging to console
+  -logLongForm: writes information out to console in long format (for
+    debugging purpose)
+  -htmlSuite <browser> <startURL> <suiteFile> <resultFile>: Run a
+    single HTML Selenese (Selenium Core) suite and then exit
+    immediately, using the specified browser (e.g. "*firefox") on the
+    specified URL (e.g. "http://www.google.com").  You need to specify
+    the absolute path to the HTML test suite as well as the path to the
+    HTML results file we'll generate.
+  -proxyInjectionMode: puts you into proxy injection mode, a mode
+    where the selenium server acts as a proxy server for all content
+    going to the test application.  Under this mode, multiple domains
+    can be visited, and the following additional flags are supported:
+
+    -dontInjectRegex <regex>: an optional regular expression that
+      proxy injection mode can use to know when to bypss injection
+    -userJsInjection <file>: specifies a JavaScript file which will
+      then be injected into all pages
+    -userContentTransformation <regex> <replacement>: a regular
+      expression which is matched against all test HTML content; the
+      second is a string which will replace matches.  These flags can
+      be used any number of times.  A simple example of how this could
+      be useful: if you add "-userContentTransformation https http"
+      then all "https" strings in the HTML of the test application will
+      be changed to be "http".
+
+This synopsis lists options available in standalone role only. To
+  get help on the options available for other roles run the server with
+  -help option and the corresponding -role option value.
+java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:509)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:321)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:240)
+	at org.openqa.grid.selenium.GridLauncher$1.launch(GridLauncher.java:58)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:127)
+[10:59:02] I/start - Selenium Standalone has exited with code 0
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[10:59:13]  watch started ... 
+[10:59:13]  build dev started ... 
+[11:03:35] I/start - java -jar /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+[11:03:35] I/start - seleniumProcess.pid: 28850
+11:03:36.098 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+11:03:36.129 INFO - Java: Oracle Corporation 25.101-b13
+11:03:36.130 INFO - OS: Mac OS X 10.12.6 x86_64
+11:03:36.137 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+11:03:36.187 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+11:03:36.187 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+11:03:36.187 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:03:36.187 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+11:03:36.188 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+11:03:36.188 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+11:03:36.239 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+
+-------------------------------
+Running as a standalone server:
+-------------------------------
+
+Usage: java -jar selenium-server.jar [-interactive] [options]
+
+  -port <nnnn>: the port number the selenium server should use
+    (default 4444)
+  -timeout <nnnn>: an integer number of seconds we should allow a
+    client to be idle
+  -browserTimeout <nnnn>: an integer number of seconds a browser is
+    allowed to hang
+  -interactive: puts you into interactive mode.  See the tutorial for
+    more details
+  -singleWindow: puts you into a mode where the test web site
+    executes in a frame. This mode should only be selected if the
+    application under test does not use frames.
+  -profilesLocation: Specifies the directory that holds the profiles
+    that java clients can use to start up selenium.  Currently
+    supported for Firefox only.
+  -forcedBrowserMode <browser>: sets the browser mode to a single
+    argument (e.g. "*iexplore") for all sessions, no matter what is
+    passed to getNewBrowserSession
+  -forcedBrowserModeRestOfLine <browser>: sets the browser mode to
+    all the remaining tokens on the line (e.g. "*custom
+    /some/random/place/iexplore.exe") for all sessions, no matter what
+    is passed to getNewBrowserSession
+  -userExtensions <file>: indicates a JavaScript file that will be
+    loaded into selenium
+  -browserSessionReuse: stops re-initialization and spawning of the
+    browser between tests
+  -avoidProxy: By default, we proxy every browser request; set this
+    flag to make the browser use our proxy only for URLs containing
+    '/selenium-server'
+  -firefoxProfileTemplate <dir>: normally, we generate a fresh empty
+    Firefox profile every time we launch.  You can specify a directory
+    to make us copy your profile directory instead.
+  -debug: puts you into debug mode, with more trace information and
+    diagnostics on the console
+  -browserSideLog: enables logging on the browser side; logging
+    messages will be transmitted to the server.  This can affect
+    performance.
+  -ensureCleanSession: If the browser does not have user profiles,
+    make sure every new session has no artifacts from previous
+    sessions.  For example, enabling this option will cause all user
+    cookies to be archived before launching IE, and restored after IE
+    is closed.
+  -trustAllSSLCertificates: Forces the Selenium proxy to trust all
+    SSL certificates.  This doesn't work in browsers that don't use the
+    Selenium proxy.
+  -log <logFileName>: writes lots of debug information out to a log
+    file and disables logging to console
+  -logLongForm: writes information out to console in long format (for
+    debugging purpose)
+  -htmlSuite <browser> <startURL> <suiteFile> <resultFile>: Run a
+    single HTML Selenese (Selenium Core) suite and then exit
+    immediately, using the specified browser (e.g. "*firefox") on the
+    specified URL (e.g. "http://www.google.com").  You need to specify
+    the absolute path to the HTML test suite as well as the path to the
+    HTML results file we'll generate.
+  -proxyInjectionMode: puts you into proxy injection mode, a mode
+    where the selenium server acts as a proxy server for all content
+    going to the test application.  Under this mode, multiple domains
+    can be visited, and the following additional flags are supported:
+
+    -dontInjectRegex <regex>: an optional regular expression that
+      proxy injection mode can use to know when to bypss injection
+    -userJsInjection <file>: specifies a JavaScript file which will
+      then be injected into all pages
+    -userContentTransformation <regex> <replacement>: a regular
+      expression which is matched against all test HTML content; the
+      second is a string which will replace matches.  These flags can
+      be used any number of times.  A simple example of how this could
+      be useful: if you add "-userContentTransformation https http"
+      then all "https" strings in the HTML of the test application will
+      be changed to be "http".
+
+This synopsis lists options available in standalone role only. To
+  get help on the options available for other roles run the server with
+  -help option and the corresponding -role option value.
+java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:509)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:321)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:240)
+	at org.openqa.grid.selenium.GridLauncher$1.launch(GridLauncher.java:58)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:127)
+[11:03:36] I/start - Selenium Standalone has exited with code 0
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[11:03:46]  watch started ... 
+[11:03:46]  build dev started ... 
+[11:10:53] I/start - java -jar /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+[11:10:53] I/start - seleniumProcess.pid: 28938
+11:10:53.854 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+11:10:53.882 INFO - Java: Oracle Corporation 25.101-b13
+11:10:53.882 INFO - OS: Mac OS X 10.12.6 x86_64
+11:10:53.890 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+11:10:53.942 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+11:10:53.942 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+11:10:53.943 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:10:53.943 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+11:10:53.944 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+11:10:53.944 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+11:10:53.994 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+
+-------------------------------
+Running as a standalone server:
+-------------------------------
+
+Usage: java -jar selenium-server.jar [-interactive] [options]
+
+  -port <nnnn>: the port number the selenium server should use
+    (default 4444)
+  -timeout <nnnn>: an integer number of seconds we should allow a
+    client to be idle
+  -browserTimeout <nnnn>: an integer number of seconds a browser is
+    allowed to hang
+  -interactive: puts you into interactive mode.  See the tutorial for
+    more details
+  -singleWindow: puts you into a mode where the test web site
+    executes in a frame. This mode should only be selected if the
+    application under test does not use frames.
+  -profilesLocation: Specifies the directory that holds the profiles
+    that java clients can use to start up selenium.  Currently
+    supported for Firefox only.
+  -forcedBrowserMode <browser>: sets the browser mode to a single
+    argument (e.g. "*iexplore") for all sessions, no matter what is
+    passed to getNewBrowserSession
+  -forcedBrowserModeRestOfLine <browser>: sets the browser mode to
+    all the remaining tokens on the line (e.g. "*custom
+    /some/random/place/iexplore.exe") for all sessions, no matter what
+    is passed to getNewBrowserSession
+  -userExtensions <file>: indicates a JavaScript file that will be
+    loaded into selenium
+  -browserSessionReuse: stops re-initialization and spawning of the
+    browser between tests
+  -avoidProxy: By default, we proxy every browser request; set this
+    flag to make the browser use our proxy only for URLs containing
+    '/selenium-server'
+  -firefoxProfileTemplate <dir>: normally, we generate a fresh empty
+    Firefox profile every time we launch.  You can specify a directory
+    to make us copy your profile directory instead.
+  -debug: puts you into debug mode, with more trace information and
+    diagnostics on the console
+  -browserSideLog: enables logging on the browser side; logging
+    messages will be transmitted to the server.  This can affect
+    performance.
+  -ensureCleanSession: If the browser does not have user profiles,
+    make sure every new session has no artifacts from previous
+    sessions.  For example, enabling this option will cause all user
+    cookies to be archived before launching IE, and restored after IE
+    is closed.
+  -trustAllSSLCertificates: Forces the Selenium proxy to trust all
+    SSL certificates.  This doesn't work in browsers that don't use the
+    Selenium proxy.
+  -log <logFileName>: writes lots of debug information out to a log
+    file and disables logging to console
+  -logLongForm: writes information out to console in long format (for
+    debugging purpose)
+  -htmlSuite <browser> <startURL> <suiteFile> <resultFile>: Run a
+    single HTML Selenese (Selenium Core) suite and then exit
+    immediately, using the specified browser (e.g. "*firefox") on the
+    specified URL (e.g. "http://www.google.com").  You need to specify
+    the absolute path to the HTML test suite as well as the path to the
+    HTML results file we'll generate.
+  -proxyInjectionMode: puts you into proxy injection mode, a mode
+    where the selenium server acts as a proxy server for all content
+    going to the test application.  Under this mode, multiple domains
+    can be visited, and the following additional flags are supported:
+
+    -dontInjectRegex <regex>: an optional regular expression that
+      proxy injection mode can use to know when to bypss injection
+    -userJsInjection <file>: specifies a JavaScript file which will
+      then be injected into all pages
+    -userContentTransformation <regex> <replacement>: a regular
+      expression which is matched against all test HTML content; the
+      second is a string which will replace matches.  These flags can
+      be used any number of times.  A simple example of how this could
+      be useful: if you add "-userContentTransformation https http"
+      then all "https" strings in the HTML of the test application will
+      be changed to be "http".
+
+This synopsis lists options available in standalone role only. To
+  get help on the options available for other roles run the server with
+  -help option and the corresponding -role option value.
+java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:509)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:321)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:240)
+	at org.openqa.grid.selenium.GridLauncher$1.launch(GridLauncher.java:58)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:127)
+[11:10:54] I/start - Selenium Standalone has exited with code 0
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[11:11:04]  watch started ... 
+[11:11:04]  build dev started ... 
+[11:14:50] I/start - java -jar /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+[11:14:50] I/start - seleniumProcess.pid: 29026
+11:14:51.056 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.22
+11:14:51.084 INFO - Java: Oracle Corporation 25.101-b13
+11:14:51.084 INFO - OS: Mac OS X 10.12.6 x86_64
+11:14:51.092 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+11:14:51.142 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+11:14:51.142 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+11:14:51.142 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:14:51.142 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+11:14:51.143 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+11:14:51.144 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+11:14:51.198 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+
+-------------------------------
+Running as a standalone server:
+-------------------------------
+
+Usage: java -jar selenium-server.jar [-interactive] [options]
+
+  -port <nnnn>: the port number the selenium server should use
+    (default 4444)
+  -timeout <nnnn>: an integer number of seconds we should allow a
+    client to be idle
+  -browserTimeout <nnnn>: an integer number of seconds a browser is
+    allowed to hang
+  -interactive: puts you into interactive mode.  See the tutorial for
+    more details
+  -singleWindow: puts you into a mode where the test web site
+    executes in a frame. This mode should only be selected if the
+    application under test does not use frames.
+  -profilesLocation: Specifies the directory that holds the profiles
+    that java clients can use to start up selenium.  Currently
+    supported for Firefox only.
+  -forcedBrowserMode <browser>: sets the browser mode to a single
+    argument (e.g. "*iexplore") for all sessions, no matter what is
+    passed to getNewBrowserSession
+  -forcedBrowserModeRestOfLine <browser>: sets the browser mode to
+    all the remaining tokens on the line (e.g. "*custom
+    /some/random/place/iexplore.exe") for all sessions, no matter what
+    is passed to getNewBrowserSession
+  -userExtensions <file>: indicates a JavaScript file that will be
+    loaded into selenium
+  -browserSessionReuse: stops re-initialization and spawning of the
+    browser between tests
+  -avoidProxy: By default, we proxy every browser request; set this
+    flag to make the browser use our proxy only for URLs containing
+    '/selenium-server'
+  -firefoxProfileTemplate <dir>: normally, we generate a fresh empty
+    Firefox profile every time we launch.  You can specify a directory
+    to make us copy your profile directory instead.
+  -debug: puts you into debug mode, with more trace information and
+    diagnostics on the console
+  -browserSideLog: enables logging on the browser side; logging
+    messages will be transmitted to the server.  This can affect
+    performance.
+  -ensureCleanSession: If the browser does not have user profiles,
+    make sure every new session has no artifacts from previous
+    sessions.  For example, enabling this option will cause all user
+    cookies to be archived before launching IE, and restored after IE
+    is closed.
+  -trustAllSSLCertificates: Forces the Selenium proxy to trust all
+    SSL certificates.  This doesn't work in browsers that don't use the
+    Selenium proxy.
+  -log <logFileName>: writes lots of debug information out to a log
+    file and disables logging to console
+  -logLongForm: writes information out to console in long format (for
+    debugging purpose)
+  -htmlSuite <browser> <startURL> <suiteFile> <resultFile>: Run a
+    single HTML Selenese (Selenium Core) suite and then exit
+    immediately, using the specified browser (e.g. "*firefox") on the
+    specified URL (e.g. "http://www.google.com").  You need to specify
+    the absolute path to the HTML test suite as well as the path to the
+    HTML results file we'll generate.
+  -proxyInjectionMode: puts you into proxy injection mode, a mode
+    where the selenium server acts as a proxy server for all content
+    going to the test application.  Under this mode, multiple domains
+    can be visited, and the following additional flags are supported:
+
+    -dontInjectRegex <regex>: an optional regular expression that
+      proxy injection mode can use to know when to bypss injection
+    -userJsInjection <file>: specifies a JavaScript file which will
+      then be injected into all pages
+    -userContentTransformation <regex> <replacement>: a regular
+      expression which is matched against all test HTML content; the
+      second is a string which will replace matches.  These flags can
+      be used any number of times.  A simple example of how this could
+      be useful: if you add "-userContentTransformation https http"
+      then all "https" strings in the HTML of the test application will
+      be changed to be "http".
+
+This synopsis lists options available in standalone role only. To
+  get help on the options available for other roles run the server with
+  -help option and the corresponding -role option value.
+java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:509)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:321)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:240)
+	at org.openqa.grid.selenium.GridLauncher$1.launch(GridLauncher.java:58)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:127)
+[11:14:51] I/start - Selenium Standalone has exited with code 0
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[11:15:01]  watch started ... 
+[11:15:01]  build dev started ... 
+[11:18:16] E/start - Selenium Standalone is not present. Install with webdriver-manager update --standalone
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[11:18:27]  watch started ... 
+[11:18:27]  build dev started ... 
+[11:20:56] E/start - Selenium Standalone is not present. Install with webdriver-manager update --standalone
+[2K[G[INFO] Starting app-scripts server: --address localhost --port 8100 --livereload-port 35729 --dev-logger-port 53703 --nobrowser - Ctrl+C to cancel
+[11:21:07]  watch started ... 
+[11:21:07]  build dev started ... 

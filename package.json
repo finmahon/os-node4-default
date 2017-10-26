@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "test-phantom": "karma start ./test-config/karma.conf.js --debug",
-    "test": "./init.sh",
-    "test-init": "./init.sh",
+    "test": "./jenkins.sh",
+    "test2": "./jenkinse2e.sh",
+    "test-init": "./jenkins.sh",
     "test-chromeheadless": "karma start ./test-config/karmachrome.conf.js --debug",
     "test-ci": "karma start ./test-config/karma.conf.js --single-run",
     "test-coverage": "karma start ./test-config/karma.conf.js --coverage",
