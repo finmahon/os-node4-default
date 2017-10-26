@@ -3,4 +3,4 @@
 pwd
 ls -al
 npm run build
-npm run test-chromeheadless
+npm run test-phantomjs
