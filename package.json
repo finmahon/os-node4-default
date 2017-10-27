@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "test-phantomjs": "karma start ./test-config/karma.conf.js --debug",
-    "test": "npm run build; npm run test-phantomjs",
+    "test": "npm run clean; npm run build; npm run test-phantomjs",
     "test2": "./scripts/jenkinse2e.sh",
     "test-init": "./jenkins.sh",
     "test-chromeheadless": "karma start ./test-config/karmachrome.conf.js --debug",
