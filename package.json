@@ -5,8 +5,8 @@
   "homepage": "http://redhat.com/",
   "private": true,
   "scripts": {
-    "test-phantomjs": "karma start ./test-config/karma.conf.js --debug",
-    "test": "npm run clean; npm run build; npm run test-phantomjs",
+    "testphantomjs": "karma start ./test-config/karma.conf.js --debug",
+    "test": "npm run clean; npm run build; npm run testphantomjs",
     "test2": "./scripts/jenkinse2e.sh",
     "test-init": "./jenkins.sh",
     "test-chromeheadless": "karma start ./test-config/karmachrome.conf.js --debug",
