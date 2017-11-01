@@ -23,7 +23,7 @@
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
     "serve": "npm run ionic:serve --enableLint false",
-    "start": "npm run clean; npm run build; node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "@angular/common": "4.4.3",
