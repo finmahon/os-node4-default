@@ -21,7 +21,6 @@ describe('HomePage', function () {
     });
   }));
   
-
   beforeEach(() => {
     fixture = TestBed.createComponent(HomePage);
     comp = fixture.componentInstance;
